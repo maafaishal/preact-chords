@@ -1,0 +1,15 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "preact",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "ignorePatterns": [
+    "build/"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": {
+      "allowExpressions": true
+    }
+  }
+}

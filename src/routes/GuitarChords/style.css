@@ -1,0 +1,15 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.chordTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.chordImg {
+  width: 100%;
+} 
