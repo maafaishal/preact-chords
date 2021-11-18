@@ -13,14 +13,19 @@ export const CHORDS = [
   "B",
 ];
 
-export const SUFFIXES = [
-  "major",
-  "7",
-  "maj7",
-  "m",
-  "m7",
-  "dim",
-  "aug",
-  "6",
-  "9",
+export const CHORDS_V2 = [
+  "C",
+  "C#",
+  "D",
+  "D#",
+  "E",
+  "F",
+  "F#",
+  "G",
+  "G#",
+  "A",
+  "Bb",
+  "B",
 ];
+
+export const SUFFIXES = ["major", "7", "maj7", "m", "m7", "aug"];

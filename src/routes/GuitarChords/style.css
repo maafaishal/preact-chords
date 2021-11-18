@@ -4,6 +4,11 @@
   margin-bottom: 24px;
 }
 
+.chordContainer {
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
 .chordTitle {
   display: flex;
   justify-content: center;

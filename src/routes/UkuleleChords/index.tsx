@@ -9,7 +9,7 @@ import { CHORDS, SUFFIXES } from "../../constants/chords";
 
 import style from "./style.css";
 
-const BREAKPOINTS = 9;
+const BREAKPOINTS = 7;
 const BREAKPOINTS_NUMBER = 100 / BREAKPOINTS;
 
 const renderChordSuffixes = (chord: string) => {
