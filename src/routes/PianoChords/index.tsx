@@ -1,20 +1,46 @@
 import { FunctionalComponent, h } from "preact";
 
 import Typography from "preact-material-components/Typography";
-import LayoutGrid from "preact-material-components/LayoutGrid";
-import "preact-material-components/LayoutGrid/style.css";
 import "preact-material-components/Typography/style.css";
+
+import { Col, Row } from "../../components/Grid";
+
+import { CHORDS_V2, SUFFIXES_V2 } from "../../constants/chords";
 
 import style from "./style.css";
 
+const BREAKPOINTS = 5;
+const BREAKPOINTS_NUMBER = 100 / BREAKPOINTS;
+
+const renderChordSuffixes = (chord: string) => {
+  return SUFFIXES_V2.map((suffix, idx) => {
+    const chordName = suffix !== "major" ? chord + suffix : chord;
+    const chordFolderName = chord.includes("#")
+      ? chord.replace("#", "-sharp")
+      : chord;
+
+    return (
+      <Row key={idx} breakpoints={BREAKPOINTS_NUMBER}>
+        <div class={style.chordContentContainer}>
+          <Typography body1 class={style.chordTitle}>
+            {chordName}
+          </Typography>
+          <img
+            class={style.chordImg}
+            src={`/assets/piano-chords/${chordFolderName}/${suffix}.png`}
+            alt={`${chordName} chord`}
+          />
+        </div>
+      </Row>
+    );
+  });
+};
+
 const renderChords = () => {
-  return [...Array(48)].map((c, idx) => (
-    <LayoutGrid.Cell key={idx} cols={2}>
-      <Typography body1 class={style.chordTitle}>
-        C
-      </Typography>
-      <img class={style.chordImg} src="/assets/piano-chord.png" alt="logo" />
-    </LayoutGrid.Cell>
+  return CHORDS_V2.map((chord, idx) => (
+    <div class={style.chordContainer} key={idx}>
+      <Col>{renderChordSuffixes(chord)}</Col>
+    </div>
   ));
 };
 
@@ -24,9 +50,7 @@ const Notfound: FunctionalComponent = () => {
       <Typography headline3 class={style.title}>
         Piano Chords
       </Typography>
-      <LayoutGrid>
-        <LayoutGrid.Inner>{renderChords()}</LayoutGrid.Inner>
-      </LayoutGrid>
+      <div>{renderChords()}</div>
     </div>
   );
 };

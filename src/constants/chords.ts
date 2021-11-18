@@ -29,3 +29,4 @@ export const CHORDS_V2 = [
 ];
 
 export const SUFFIXES = ["major", "7", "maj7", "m", "m7", "aug"];
+export const SUFFIXES_V2 = ["major", "7", "maj7", "m", "m7"];
