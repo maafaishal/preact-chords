@@ -1,5 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 import { useState } from "preact/hooks";
+import Helmet from "preact-helmet";
 
 import Typography from "preact-material-components/Typography";
 import "preact-material-components/Typography/style.css";
@@ -79,6 +80,7 @@ const PianoChordPage: FunctionalComponent = () => {
 
   return (
     <div class="container content">
+      <Helmet title="Piano Chord" />
       <Typography headline3 class={style.title}>
         Piano Chords
       </Typography>

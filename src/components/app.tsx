@@ -1,5 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 import { Route, Router } from "preact-router";
+import Helmet from "preact-helmet";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -15,6 +16,21 @@ import style from "./style.css";
 const App: FunctionalComponent = () => {
   return (
     <div id="preact_root">
+      <Helmet
+        title="Home"
+        titleTemplate="%s - All Chords of Piano, Guitar, and Ukulele"
+        meta={[
+          {
+            name: "description",
+            content: "A collection of Piano, Guitar, and Ukulele chords",
+          },
+          {
+            name: "keywords",
+            content: "chord, guitar chord, piano chord, ukulele chord",
+          },
+          { property: "og:type", content: "article" },
+        ]}
+      />
       <Header />
       <div class={style.bodyContent}>
         <Router>

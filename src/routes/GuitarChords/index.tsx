@@ -1,5 +1,6 @@
 import { h } from "preact";
 import { useState } from "preact/hooks";
+import Helmet from "preact-helmet";
 
 import Typography from "preact-material-components/Typography";
 import "preact-material-components/Typography/style.css";
@@ -77,6 +78,7 @@ const GuitarChordPage = () => {
 
   return (
     <div class="container content">
+      <Helmet title="Guitar Chord" />
       <Typography headline3 class={style.title}>
         Guitar Chords
       </Typography>
