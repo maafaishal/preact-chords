@@ -5,15 +5,27 @@ body {
   padding: 0;
   margin: 0;
   background: #fafafa;
-  font-family: "Helvetica Neue", arial, sans-serif;
   font-weight: 400;
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+div, span, p {
+  font-family: 'Rubik', sans-serif !important;
 }
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  pointer-events: none;
+}
+
+a {
+  text-decoration:none;
 }
 
 .container {

@@ -1,8 +1,13 @@
 import { FunctionalComponent, h } from "preact";
+import cx from "classnames";
 import style from "./style.css";
 
-const GidCol: FunctionalComponent = ({ children }) => {
-  return <div class={style.col}>{children}</div>;
+type Props = {
+  className?: string;
+};
+
+const GidCol: FunctionalComponent<Props> = ({ children, className }) => {
+  return <div class={cx(style.col, className)}>{children}</div>;
 };
 
 export default GidCol;

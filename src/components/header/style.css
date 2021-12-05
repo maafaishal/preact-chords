@@ -1,8 +1,30 @@
 .header {
-	padding: 16px 0;
-	border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu {
+  padding: 16px;
+  text-align: center;
+}
+
+.menuGrid {
+  padding: 0;
+}
+
+.link {
+  width: 100px;
+  background-color: red;
+  margin-left: 16px;
+  border-radius: 4px;
 }
 
 .logo {
-	height: 80px;
+  height: 80px;
+}
+
+.menuCol {
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
