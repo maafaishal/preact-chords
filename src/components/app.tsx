@@ -13,7 +13,7 @@ import NotFoundPage from "../routes/notfound";
 
 import style from "./style.css";
 
-const App: FunctionalComponent = () => {
+const AppComponent = () => {
   return (
     <div id="preact_root">
       <Helmet
@@ -31,6 +31,7 @@ const App: FunctionalComponent = () => {
           { property: "og:type", content: "article" },
         ]}
       />
+
       <Header />
       <div class={style.bodyContent}>
         <Router>
@@ -46,4 +47,4 @@ const App: FunctionalComponent = () => {
   );
 };
 
-export default App;
+export default AppComponent;
