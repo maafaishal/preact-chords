@@ -1,5 +1,5 @@
 .header {
-  padding: 16px 0;
+  padding: 24px 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -14,13 +14,46 @@
 
 .link {
   width: 100px;
-  background-color: red;
   margin-left: 16px;
   border-radius: 4px;
+  color: black;
+  transition: background-color 300ms linear;
+}
+
+.link1 {
+  background-color: #F8BBD0;
+}
+
+.link1:hover {
+  background-color: #E91E63;
+}
+
+.link2 {
+  background-color: #A7FFEB;
+}
+
+.link2:hover {
+  background-color: #00BCD4;
+}
+
+.link3 {
+  background-color: #FFFF8D;
+}
+
+.link3:hover {
+  background-color: #FFEB3B;
+}
+
+.link4 {
+  background-color: #FF9E80;
+}
+
+.link4:hover {
+  background-color: #FF5722;
 }
 
 .logo {
-  height: 80px;
+  height: 72px;
 }
 
 .menuCol {
