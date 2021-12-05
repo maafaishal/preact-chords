@@ -1,17 +1,16 @@
-import { FunctionalComponent, h } from "preact";
+import { h } from "preact";
 import cx from "classnames";
 
 import { Link } from "preact-router/match";
+
 import LayoutGrid from "preact-material-components/LayoutGrid";
 import "preact-material-components/LayoutGrid/style.css";
 
-import { Col, Row } from "../../components/Grid";
+import { Col } from "../../components/Grid";
 
 import style from "./style.css";
 
-const BREAKPOINTS_NUMBER = 100 / 5;
-
-const Header: FunctionalComponent = () => {
+const Header = () => {
   return (
     <header class={style.header}>
       <div class="container">

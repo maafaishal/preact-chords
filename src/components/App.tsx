@@ -33,6 +33,7 @@ const AppComponent = () => {
       />
 
       <Header />
+
       <div class={style.bodyContent}>
         <Router>
           <Route path="/" component={Home} />
@@ -42,6 +43,7 @@ const AppComponent = () => {
           <NotFoundPage default />
         </Router>
       </div>
+
       <Footer />
     </div>
   );
