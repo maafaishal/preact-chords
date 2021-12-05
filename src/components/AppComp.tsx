@@ -1,4 +1,4 @@
-import { FunctionalComponent, h } from "preact";
+import { h } from "preact";
 import { Route, Router } from "preact-router";
 import Helmet from "preact-helmet";
 
